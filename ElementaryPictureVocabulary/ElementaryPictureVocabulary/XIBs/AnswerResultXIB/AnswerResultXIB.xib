@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AnswerResultXIB" customModule="ElementaryPictureVocabulary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LbX-b4-8rZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="275"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="LbX-b4-8rZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7JR-ir-5A6"/>
+                <constraint firstItem="LbX-b4-8rZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DpA-L8-Giv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LbX-b4-8rZ" secondAttribute="trailing" id="KMA-fG-vIo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LbX-b4-8rZ" secondAttribute="bottom" id="Z7e-WJ-m9e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="showAnswerImageView" destination="LbX-b4-8rZ" id="XJA-gk-VDL"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="321.76339285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
